@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>to-do list</title>
+        <style>
+            *{
+                margin:0px;
+                padding:0px;
+                background-color: #0b0b94;
+                box-sizing: border-box; 
+                
+            }
+            body{
+                margin:200px;
+                padding-left: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                /*height: 100vh;*/
+                font-family:  'Times New Roman', serif, sans-serif;
+                color: white;
+                box-sizing: border-box;
+               /* border-left: 10px solid;*/
+                /*border-color: #ffffff;*/
+                /*border-bottom: #ffffff;*/
+                
+            }
+        </style>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="stats-container">
+                <div class="details">
+                    <h1>To-Do list</h1>
+                    <p>keep it up</p>
+                    <div id="progressBar">
+                        <div id="progress"></div>
+                    </div>
+                </div>
+                <div class="stats-numbers">
+                    <p id="numbers">2 / 3</p>
+                </div>
+            </div>
+
+            <form action="">
+                <input type="text" id="taskInput" placeholder="write your task" >
+                <button id="newTask" type="submit">+</button>           
+            </form>
+
+            <ul id="task-list"></ul>
+        </div>
+        
+        <script src="app.js"></script>
+    </body>
+</html>
